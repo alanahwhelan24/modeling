@@ -1,0 +1,18 @@
+weather =input("Is The Weather Sunny, Overcast or Raining : ")
+if weather == "overcast" :
+    print("you can play tennis!")
+
+if weather == "sunny" :
+    humidity = int(input("is the humidity 1.high or 2.low : "))
+    if humidity == 1:
+        print("you cant play tennis!")
+    elif humidity == 2:
+        print("you can play tennis!")
+
+if weather == "raining" :
+    wind = int(input("is the wind 1.strong or 2.weak : "))
+    if wind == 1:
+        print("you cant play tennis!")
+    elif wind == 2:
+        print("you can play tennis!")
+        
