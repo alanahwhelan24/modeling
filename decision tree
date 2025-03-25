@@ -15,4 +15,29 @@ if weather == "raining" :
         print("you cant play tennis!")
     elif wind == 2:
         print("you can play tennis!")
+  
+
+ATTEMPT 2
+
+def playTennis(outlook, humidity, windy):
+    if outlook == 1: # overcast
+        return "Yes"
+   #sunny and low humidity 
+    if outlook == 2 and humidity == 1:
+        return "Yes"
+    #sunny and high humidity
+    elif outlook == 2 and humidity == 2:
+        return "No"
+    #raining and low wind
+    if outlook == 3 and wind == 1:
+        return "Yes"
+    elif outlook == 3 and wind == 2:
+        return "No"
+
+weather = int(input("What is the weather like 1.Overcast, 2.Sunny, 3.Rain: "))
+humid = int(input("Is the humidity 1.Low, 2.High: "))
+wind = int(input("Is the wind 1.Weak, 2.Strong: "))
+
+shouldIplay = playTennis(weather, humid, wind)
+print(shouldIplay)        
         
