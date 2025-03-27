@@ -1,0 +1,22 @@
+def thermostatModel(actual, target):
+     if actual < target:
+        return 1
+     else:
+        return 0
+tempOnOrOff = thermostatModel(18, 14)
+print(tempOnOrOff)
+
+#TASK 1
+import random
+def rollDice(guess) : 
+userGuess= int(input(guess a number between 1 and 6 : ))
+
+roll = random.randint(1, 6)
+if guess == roll:
+     return “your guess was correct !”
+else:
+      Return”your guess was incorrect”
+print(roll)
+
+
+
